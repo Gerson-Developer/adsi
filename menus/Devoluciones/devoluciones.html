@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP 5 "CSS" -->
+    <link rel="stylesheet" href="E:\Proyectos\ADSI\Dashboard (Gest-Inv)\css\bootstrap.min.css" />
+    <!-- MIS ESTILOS "PROPIOS" -->
+    <link rel="stylesheet" href="E:\Proyectos\ADSI\Dashboard (Gest-Inv)\style-inicio.css" />
+    <title>DEVOLUCIONES</title>
+  </head>
+  <body>
+      <!-- CONTENIDO "CONTAINER" -->
+      <div class="container">
+        <!-- HEADER CONTENEDOR "1ra fila" -->
+        <header class="row">
+          <!-- TIYTULO DEL HEADER -->
+          <a class="titulo" href="E:\Proyectos\ADSI\Dashboard (Gest-Inv)\dashboard-inicio.html">Gest-Inv</a>
+          <!-- NAV LATERAL -->
+          <nav></nav>
+          <!-- BOTON DE CONFIGURACION -->
+          <!--  -->
+          <!--BOTON DE SALIR  -->
+          <!--  -->
+        </header>
+        <!-- CONTENIDO DE PRINCIPAL DE LA PAGINA "2da FILA" -->
+        <!-- Instruciones -->
+        <div class="col">
+          <h2>DEVOLUCIONES</h2>
+          <p>
+            En el módulo DEVOLUCIONES podrá ver el listado de todas las devoluciones de compras y ventas realizadas. Además, podrá buscar devoluciones por fecha.
+          </p>
+        </div>
+        <!-- OPCIONES DE OPERACIONES -->
+        <div class="opciones-operaciones">
+
+          <ul class="nav nav-tabs justify-content-around" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="nueva-tab" data-bs-toggle="tab" data-bs-target="#nueva" type="button" role="tab" aria-controls="nueva" aria-selected="true">REALIZAR NUEVA DEVOLUCION</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="realizadas-tab" data-bs-toggle="tab" data-bs-target="#realizadas" type="button" role="tab" aria-controls="realizadas" aria-selected="false">DEVOLUCIONES REALIZADAS</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="buscar-tab" data-bs-toggle="tab" data-bs-target="#buscar" type="button" role="tab" aria-controls="buscar" aria-selected="false">BUSCAR DEVOLUCIONES</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <!-- REALIZAR NUEVA DEVOLUCION -->
+            <div class="tab-pane fade" id="nueva" role="tabpanel" aria-labelledby="nueva-tab">Nueva COMPRA</div>
+            <!-- DEVOLUCIONES REALIZADAS -->
+            <div class="tab-pane fade show active" id="realizadas" role="tabpanel" aria-labelledby="realizadas-tab">
+              <table class="table  mt-3">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">NOMBRE</th>
+                    <th scope="col">DIRECCION</th>
+                    <th scope="col">TELEFONO</th>
+                    <th scope="col">ACTUALIZAR</th>
+                    <th scope="col">ELIMINAR</th>
+        
+        
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>5666165665</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>5666165665</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>5666165665</td>
+                    <td>@twitter</td>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                    <td>Lorem.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--BUSCAR DEVOLUCIONES -->
+            <div class="tab-pane fade" id="buscar" role="tabpanel" aria-labelledby="buscar-tab">
+              <form>
+                <div class="mb-3">
+                  <label for="buscar" class="form-label"
+                    >QUE DEVOLUCION DESEA BUSCAR</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="buscar"
+                    placeholder="Buscar"
+                  />
+                  <input type="button" value="Buscar" class="btn btn-outline-success">
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+     <!-- BOOTSTRAP 5 "JS" -->
+    <script src="E:\Proyectos\ADSI\Dashboard (Gest-Inv)\js\bootstrap.bundle.min.js"></script>
+  </body>
+</html>
